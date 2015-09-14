@@ -1,0 +1,254 @@
+<snippet>
+	<content><![CDATA[
+/* import normalize */
+@import 'normalize'
+
+/* assign colors */
+$dark: #424652
+$light: #9a9da4
+$highlight: #8bc6db
+$border: #E9E9E9
+
+/* font family */
+body
+	font-family: 'Raleway', sans-serif
+
+/* wrapper or container */
+.wrapper
+	width: 90%
+	margin: 0 auto
+
+.wrapper-padding
+	padding: 2rem 0
+
+/* clearfix */
+.clearfix:before,
+.clearfix:after
+	content: " "
+	display: table
+
+.clearfix:after
+	clear: both
+
+/* main navigation and its nested .name and nav*/
+#main-navigation
+	padding: 2.5em 5%
+	border-bottom: 1px solid $border
+	.name
+		font-weight: 600
+		font-size: 0.7em
+		text-transform: uppercase
+		border: 3px solid $border
+		padding: 0.5em 1rem
+		text-decoration:none
+		color: $dark
+		float: left
+	nav
+		float: right
+		/* local style for a */
+		a
+			color: $dark
+			text-decoration: none
+			margin: 0 1rem
+			font-size: 1rem
+			&:hover
+				color: $highlight
+
+/* style for columns */
+.col-1,
+.col-2,
+.col-3
+	float: left
+
+.col-1
+	width: 45%
+	padding: 0 5% 0 2.5%
+
+.col-2,
+.col-3
+	width:27.5%
+	padding: 0 2.5%
+
+/* box-sizing to set 3 inline column */
+*
+	box-sizing: border-box
+
+h1, h2, h3, h4, h5, h6, p, ul, li
+	color: $dark
+
+h1
+	font-size: 2.5rem
+
+h2
+	font-size: 2rem
+
+h3
+	font-size: 1.75rem
+
+h4
+	font-size: 1.375rem
+
+h5
+	font-size: 1.25rem
+
+h6
+	font-size: 1rem
+
+p, 
+li
+	font-size: 1.1rem
+	line-height: 1.75
+
+.homepage-content
+	h2
+		font-size: 1rem
+		text-transform: uppercase
+	h3
+		font-size: 1.35em
+		font-weight: 400
+		margin-bottom: 0.5em
+
+.date
+	font-size: .80em
+	margin-bottom: 2em
+	color: $light
+
+.about
+	padding: 0 7.5% 0 0
+	/* local style for a */
+	a
+		color: $highlight
+		font-weight: 500
+		text-decoration: none
+
+/* global style for a */
+a
+	text-decoration: none
+	color: $dark
+	&:hover
+		color: $highlight	
+
+hr
+	display: block
+	width: 7em
+	height: 3px
+	border: 0
+	border-top: 3px solid $highlight
+	margin: 2rem 0
+
+#main-footer
+	padding: 2.5em 5%
+	border-top: 1px solid $border
+	.copyright
+		float: left
+		font-size: 0.9em
+		margin: 0
+	nav
+		float: right
+		i
+			color: $dark
+			margin-left: 1em
+			padding-top: 0.2em
+			&:hover
+				color: $highlight
+
+/* style for about pages */
+
+#page-title
+	text-align: center
+	border-bottom: 1px solid $border
+	padding: 2em 0
+	font-size: 1rem
+	text-transform: uppercase
+
+#post-wrapper
+	padding: 3em 0
+	.post
+		text-align: left
+		.date
+			font-size: 0.8em
+			margin-bottom: 1em
+		h2
+			margin-bottom: 0
+			font-size: 1.5em
+			text-transform: uppercase
+
+.skinny-wrapper
+	width: 90%
+	max-width: 800px
+	margin: 0 auto
+
+/* sample-post or post-show-content */
+header
+	text-align: left
+	.date
+		font-size: 0.9em
+		color: $light
+
+/* image */
+/*img
+	.align-left
+		float: left
+		margin-right: 1em
+	.align-center
+		float: center*/
+
+figure
+	display: block
+	//min-width: 400px
+	//min-height: 300px
+	overflow: hidden
+	background-color: white
+	margin: 0
+	padding: 1em
+	text-align: center
+	img
+		//min-width: 350px
+		//min-height: 250px
+		border: 1px solid $dark
+		overflow: hidden
+	.figcaption
+		font-size: 1rem
+		font-style: bolder
+		color: $dark
+
+/* pagination */
+.pagination:before,
+.pagination:after
+	content: " "
+	display: table
+
+.pagination:after
+	clear:both
+
+.pagination
+	text-align: center
+	margin: 3em 0 0 0
+	a, .previous-page, .current, .next-page
+		padding: 0.75em 1em
+		margin: 0 0.25em
+		border-radius: 0.15em
+		line-height: 20px
+		background: white
+		font-weight: 700
+		font-size: 0.7em
+		font-style: normal
+		color: $dark
+		&:hover
+			background: $highlight
+			color: white
+	.current
+		background: $highlight
+		color: white
+	.disabled
+		color: $light
+		&:hover
+			color: #C0C0C0
+			background: white
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>bul-sass-main</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

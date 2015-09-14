@@ -1,0 +1,33 @@
+doctype html
+html
+	head
+		title Buckle up! Be a good web developer
+		link(rel="stylesheet", href="_scss/main.css")
+		link(href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css')
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+	body
+		header#main-navigation.clearfix
+			a.name(href="index.html") Gema Buj
+			nav
+				a(href="posts.html") Article
+				a(href="#") Projects
+				a(href="contact.html") Contact
+		
+		// Insert bul-jd-02-posts or bul-jd-03-home
+		#post-show-content.wrapper-padding.skinny-wrapper
+			header
+				p.date April 13th, 2015
+				h1 Buckle up! Be a good web developer
+				hr
+			#content
+				include ../_includes/_buckle
+
+		footer#main-footer
+			p.copyright &copy; 2015 | Gema Buj
+			nav
+				a(href="https://github.com/echo-man")
+					i.fa.fa-github
+				a(href="https://github.com/gemabuj")
+					i.fa.fa-github-alt
+				a(href="")
+					i.fa.fa-twitter

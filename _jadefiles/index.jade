@@ -1,0 +1,30 @@
+doctype html
+html
+	head
+		title Gema Buj - A Blog and Portfolio Combined
+		link(rel="stylesheet", href="_scss/main.css")
+		link(href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css')
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+	body
+		header#main-navigation.clearfix
+			a.name(href="index.html") Gema Buj
+			nav
+				a(href="posts.html") Article
+				a(href="#") Projects
+				a(href="contact.html") Contact
+		
+		//h1#page-title Welcome to My Humble Abode
+		.wrapper.wrapper-padding.clearfix
+			include ../_includes/_home-about
+			include ../_includes/_home-projects
+			include ../_includes/_home-blogposts
+			
+		footer#main-footer
+			p.copyright &copy; 2015 | Gema Buj
+			nav
+				a(href="https://github.com/echo-man")
+					i.fa.fa-github
+				a(href="https://github.com/gemabuj")
+					i.fa.fa-github-alt
+				a(href="")
+					i.fa.fa-twitter
